@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-holder bg-info position-relative">
+            <img id="imgSource" src="images/meal3.png" class="img-fluid h-100 object-fit-cover" alt="">
+            <div class="badge bg-secondary position-absolute top-0 start-0">
+                <span id="rating">4.7</span>
+                <span>
+                    (
+                    <span id="reviews">289</span>
+                    reviews
+                    )
+                </span>
+            </div>
+            <div
+                class="row p-2 rounded-2 bg-secondary position-absolute bottom-0 start-50 translate-middle-x w-75 text-center text-capitalize">
+                <div class="col-md-4">
+                    <h3 class="h6">Prep Time</h3>
+                    <p>
+                        <span id="prepTime">20</span>
+                        min
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h6">cook time</h3>
+                    <p>
+                        <span id="cookTime">30</span>
+                        min
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h6">servings</h3>
+                    <p>
+                        <span id="servings">4</span>
+                        People
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content position-relative">
+            <span id="difficulty" class="bg-secondary badge">Easy</span>
+            <span id="region" class="bg-secondary badge">Asian</span>
+            <h2 id="name">Vegetable Curry</h2>
+            <p id="desc">Slow-cooked tender pork in smoky barbecue sauce</p>
+            <div class="bg-danger text-white rounded rounded-2 p-2" id="isExtended">
+                <h5>Extended Preparation Time</h5>
+                <p>This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
+            </div>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="ingredients-tab" data-bs-toggle="tab"
+                        data-bs-target="#ingredients-tab-pane" type="button" role="tab"
+                        aria-controls="ingredients-tab-pane" aria-selected="true">ingredients</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="instructions-tab" data-bs-toggle="tab"
+                        data-bs-target="#instructions-tab-pane" type="button" role="tab"
+                        aria-controls="instructions-tab-pane" aria-selected="false">instructions</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="nutrition-tab" data-bs-toggle="tab"
+                        data-bs-target="#nutrition-tab-pane" type="button" role="tab" aria-controls="nutrition-tab-pane"
+                        aria-selected="false">nutrition</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="chefsTips-tab" data-bs-toggle="tab"
+                        data-bs-target="#chefsTips-tab-pane" type="button" role="tab" aria-controls="chefsTips-tab-pane"
+                        aria-selected="false">chefsTips</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-2" id="myTabContent">
+                <div class="tab-pane fade show active" id="ingredients-tab-pane" role="tabpanel"
+                    aria-labelledby="ingredients-tab" tabindex="0">
+                    <ul id="ingredients">
+                        <li>
+                            1-ingredients
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="instructions-tab-pane" role="tabpanel" aria-labelledby="instructions-tab"
+                    tabindex="0">
+                    <ul id="instructions">
+                        <li>
+                            1-instructions
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="nutrition-tab-pane" role="tabpanel" aria-labelledby="nutrition-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Calories
+                                </p>
+                                <p>
+                                    <span id="calories">
+                                        380
+                                    </span>
+                                    <span>kcal
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>protein
+                                </p>
+                                <p>
+                                    <span id="protein">
+                                        36
+                                    </span>
+                                    <span>gm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>carbohydrates
+                                </p>
+                                <p>
+                                    <span id="carbohydrates">
+                                        32
+                                    </span>
+                                    <span>g
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>fat
+                                </p>
+                                <p>
+                                    <span id="fat">
+                                        42
+                                    </span>
+                                    <span>g
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>fiber
+                                </p>
+                                <p>
+                                    <span id="fiber">
+                                        8
+                                    </span>
+                                    <span>g
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>
+                                    sodium
+                                </p>
+                                <p>
+                                    <span id="sodium">
+                                        820
+                                    </span>
+                                    <span>g
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="chefsTips-tab-pane" role="tabpanel" aria-labelledby="chefsTips-tab"
+                    tabindex="0">
+                    <ul id="chefsTips">
+                        <li>
+                            1-chefs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-success position-absolute start-50 bottom-0 translate-middle-x"
+                onclick="generateRandomIndex()">
+                Try Another recipe
+            </button>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

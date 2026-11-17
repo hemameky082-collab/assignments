@@ -1,0 +1,346 @@
+:root {
+    --primary-orange: #f97316;
+    --light-orange: #ffedd5;
+    --dark-orange: #ea580c;
+    --warning-red: #dc3545;
+    --success-green: #198754;
+    --info-blue: #0dcaf0;
+    --text-gray-500: #6a7282;
+    --text-gray-600: #4a5565;
+    --color-orange-600: #f54a00;
+    --color-orange-300: #ffb86a;
+    --color-orange-500: #ff6900;
+    --color-red-500: #fb2c36;
+    --color-blue-500: #2b7fff;
+    --text-green-700: #008236;
+    --bg-green-100: #dcfce7;
+    --text-blue-700: #1447e6;
+    --bg-blue-100: #dbeafe;
+    --color-orange-100: #ffedd4;
+    --color-orange-200: #ffd7a8;
+    --color-red-500: #fb2c36;
+    --color-red-800: #9f0712;
+    --color-red-600: #e7000b;
+    --text-gray-700: #364153;
+}
+
+body {
+    background: linear-gradient(to bottom right, #fff7ed, #fffbeb, #fefce8);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.w-12 {
+    width: 48px;
+}
+
+.h-12 {
+    height: 48px;
+}
+
+.w-10 {
+    width: 40px;
+}
+
+.h-10 {
+    height: 40px;
+}
+
+.w-6 {
+    width: 24px;
+}
+
+.h-6 {
+    height: 24px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.px-12 {
+    padding-inline: 12px;
+}
+
+/* START NAVBAR */
+.navbar {
+    border-bottom: 1px solid #ffedd4;
+
+    box-shadow: 0px 0px 5px 5px #0000001a;
+
+    .navbar-brand div:first-child {
+        background-image: linear-gradient(to bottom right, oklch(63.7% .237 25.331), oklch(70.5% .213 47.604));
+        box-shadow: 0px 0px 4px 4px #0000001a;
+    }
+
+    .navbar-toggler {
+        border: none;
+        transition: all .15s;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: var(--color-orange-600);
+        }
+    }
+
+    .navbar-brand div:last-child p {
+        color: var(--text-gray-500);
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid #ffedd4;
+
+        button {
+            color: var(--text-gray-600);
+            transition: all .15s;
+            border: none;
+            padding-left: 0;
+
+            &:hover {
+                color: var(--color-orange-600);
+            }
+        }
+
+        div div:last-child span {
+            transition: all .15s;
+        }
+
+        div div:last-child:hover span {
+            color: var(--color-orange-600);
+        }
+
+        img {
+            border: 2px solid var(--color-orange-300);
+        }
+    }
+}
+
+/* END NAVBAR */
+
+
+/* START MAIN-CONTENT */
+/* START LEFT */
+.recipe-image-container {
+    >div:nth-of-type(1) {
+        top: 24px;
+        left: 24px;
+
+        span:nth-of-type(2) {
+            color: var(--text-gray-500);
+        }
+    }
+
+    >div:nth-of-type(2) {
+        bottom: 24px;
+        left: 24px;
+        right: 24px;
+
+        >div {
+            div:nth-of-type(1) i {
+                color: var(--color-orange-500);
+            }
+
+            div:nth-of-type(2) i {
+                color: var(--color-red-500);
+            }
+
+            div:nth-of-type(3) i {
+                color: var(--color-blue-500);
+            }
+
+            div p:nth-of-type(1) {
+                color: var(--text-gray-500);
+            }
+        }
+    }
+}
+
+/* END LEFT */
+
+/* START RIGHT */
+.content-right {
+    &>div {
+        &:first-child {
+            &>div:first-child>div:first-child {
+                &>span:nth-of-type(1) {
+                    background-color: var(--bg-green-100);
+                    color: var(--text-green-700);
+                }
+
+                &>span:nth-of-type(2) {
+                    background-color: var(--bg-blue-100);
+                    color: var(--text-blue-700);
+                }
+            }
+        }
+
+        p {
+            color: var(--text-gray-600);
+        }
+
+        div:nth-of-type(2) {
+            button {
+                color: var(--color-orange-600);
+                background-color: var(--color-orange-100);
+                transition: all .15s;
+
+                &:hover {
+                    background-color: var(--color-orange-200);
+                }
+            }
+        }
+
+    }
+
+    div:nth-of-type(2) {
+        --bs-border-color: var(--color-red-500);
+
+        i {
+            color: var(--color-red-500);
+        }
+
+        p:nth-of-type(1) {
+            color: var(--color-red-800);
+        }
+
+        p:nth-of-type(2) {
+            color: var(--color-red-600);
+        }
+
+    }
+
+    .nav-tabs {
+        .nav-link {
+            --bs-nav-tabs-border-width: 0;
+            color: #6a7282;
+            font-size: 16px;
+            transition: all .15s;
+
+            &:hover {
+                color: #364153;
+            }
+
+            &.active {
+                color: var(--primary-orange);
+                border-bottom: .125rem solid var(--primary-orange);
+            }
+        }
+    }
+
+    .tab-content {
+        overflow-x: hidden;
+
+        &>.tab-pane {
+            &>.p-4 {
+                background-image: linear-gradient(to right, #fff7ed, #fffbeb);
+
+                ul li>div {
+                    background-color: var(--color-orange-500);
+                }
+
+                span {
+                    color: var(--text-gray-700);
+                }
+            }
+        }
+
+        .nutrition-card {
+            background-color: #f8fafc;
+            color: var(--text-gray-700);
+
+            strong {
+                color: #101828;
+                font-size: 1.25rem;
+            }
+
+            .nutrition-icon {
+                width: 2.75rem;
+                height: 2.75rem;
+                display: grid;
+                place-items: center;
+                border-radius: .625rem;
+            }
+
+            .calories {
+                color: #f54a00;
+                background-color: #ffedd4;
+            }
+
+            .protein {
+                color: #2b7fff;
+                background-color: #dbeafe;
+            }
+
+            .carbohydrates {
+                color: #ca8a04;
+                background-color: #fef9c3;
+            }
+
+            .fat {
+                color: #e7000b;
+                background-color: #ffe2e5;
+            }
+
+            .fiber {
+                color: #16a34a;
+                background-color: #dcfce7;
+            }
+
+            .sodium {
+                color: #db2777;
+                background-color: #fce7f3;
+            }
+        }
+
+        .chef-tips {
+            .tip-card {
+                background-color: #fffbeb;
+                border-left: .25rem solid #fbbf24;
+                color: var(--text-gray-700);
+                font-size: 1.0625rem;
+
+                i {
+                    color: #d97706;
+                    font-size: 1.375rem;
+                }
+            }
+        }
+
+    }
+
+    .try-recipe {
+        border-top: 1px solid #e5e7eb;
+
+        button {
+            border: 0;
+            background-image: linear-gradient(to right, #ff6900, #fb2c36);
+            box-shadow: 0 .5rem 1rem #00000026;
+            transition: all .2s;
+
+            &:hover {
+                color: #fff;
+                background-image: linear-gradient(to right, #f54a00, #e7000b);
+                box-shadow: 0 .75rem 1.25rem #00000033;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+/* END RIGHT */
+/* END MAIN CONTENT */
