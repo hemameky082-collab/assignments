@@ -1,0 +1,117 @@
+@media screen and (max-width:1280px) {
+    #sidebar {
+        width: 64px;
+        transition: all .3s;
+    }
+
+    .md-none {
+        display: none;
+    }
+
+    .parent {
+        padding: 12px;
+    }
+
+    #sidebar .parent .logo .coins {
+        padding: 12px 8px;
+    }
+
+    #sidebar .parent .quick-actions .buttons button {
+        padding: 0;
+    }
+
+    .container {
+        margin-inline-start: 64px;
+    }
+
+    #main-content #dashboard-widgets {
+        grid-template-areas:
+            "not not not not not not income income income income income income"
+            "trans trans trans trans trans trans trans trans trans trans trans trans"
+            "trans trans trans trans trans trans trans trans trans trans trans trans"
+            "bill bill bill bill bill bill account account account account account account"
+            "budget budget budget budget budget budget payment payment payment payment payment payment";
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #summary-cards .card p:nth-of-type(2) {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #sidebar {
+        width: 320px;
+        transition: all .3s;
+        transform: translate(100%);
+    }
+
+    .md-none {
+        display: none;
+    }
+
+    .container {
+        margin-inline-start: 0;
+        padding: 16px;
+    }
+
+    #main-content #header {
+        margin-block-end: 24px;
+    }
+
+    #header .header__parent {
+        padding: 16px;
+    }
+
+    #main-content #summary-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #main-content #dashboard-widgets {
+        grid-template-areas:
+            "not not not not not not not not not not not not"
+            "trans trans trans trans trans trans trans trans trans trans trans trans"
+            "bill bill bill bill bill bill bill bill bill bill bill bill"
+            "budget budget budget budget budget budget budget budget budget budget budget budget"
+            "income income income income income income income income income income income income"
+            "account account account account account account account account account account account account"
+            "payment payment payment payment payment payment payment payment payment payment payment payment";
+    }
+}
+
+@media screen and (max-width:640px) {
+    #header .header__parent {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .header__right .connect {
+        display: none;
+    }
+
+    .header__parent .header__left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__left .content .paragraph {
+        display: none;
+    }
+
+    .header__parent .connect_block {
+        display: block;
+    }
+
+    #main-content #dashboard-widgets {
+        grid-template-areas:
+            "not not not not not not not not not not not not"
+            "trans trans trans trans trans trans trans trans trans trans trans trans"
+            "bill bill bill bill bill bill bill bill bill bill bill bill"
+            "budget budget budget budget budget budget budget budget budget budget budget budget"
+            "income income income income income income income income income income income income"
+            "account account account account account account account account account account account account"
+            "payment payment payment payment payment payment payment payment payment payment payment payment";
+    }
+}
